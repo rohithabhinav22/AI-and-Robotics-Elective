@@ -1,0 +1,82 @@
+#VRML_SIM R2025a utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/road/protos/StraightRoadSegment.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/road/protos/CurvedRoadSegment.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/vehicles/protos/bmw/BmwX5.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation 0.01784208247491843 0.999568696050106 -0.02332556472304834 1.306215465779093
+  position -7.406350648826745 -13.634637892035016 151.42444173748362
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  translation -7.08473 -0.3421 1.46088e-11
+  floorSize 400 200
+  floorAppearance Appearance {
+    material Material {
+    }
+    texture ImageTexture {
+      url [
+        "../../grass.jpg"
+      ]
+      filtering 5
+    }
+  }
+}
+BmwX5 {
+  hidden position_0_0 8.90315344974205e-12
+  hidden position2_0_0 -5.029363175923506e-10
+  hidden position_0_1 -8.275556767339281e-12
+  hidden position2_0_1 -8.111876656502481e-10
+  hidden position_0_2 0.2531707862107698
+  hidden position_0_3 -0.09029942859943378
+  hidden rotation_3 0 -1 0 0.253170786210769
+  hidden rotation_4 0 -1 0 0.09029942859943288
+  translation 0.018909721082453812 0.8195760879659004 0.1132484173920903
+  rotation -0.009024616030303018 -0.22751094191320323 -0.9737337046725212 0.081429746696067
+}
+CurvedRoadSegment {
+  translation 24 -23 0.04
+  width 13
+  numberOfLanes 1
+  roadBorderHeight 0.1
+  rightBarrier TRUE
+  leftBarrier TRUE
+  curvatureRadius 23
+  roadBoundingObject TRUE
+  rightBorderBoundingObject TRUE
+  leftBorderBoundingObject TRUE
+}
+StraightRoadSegment {
+  translation -46 0 0.04
+  name "Straight 1"
+  width 13
+  numberOfLanes 1
+  rightBarrier TRUE
+  leftBarrier TRUE
+  length 70
+  roadBoundingObject TRUE
+  rightBorderBoundingObject TRUE
+  leftBorderBoundingObject TRUE
+}
+StraightRoadSegment {
+  translation 47 -93 0.04
+  rotation 0 0 1 1.57
+  name "Straight 1(1)"
+  width 13
+  numberOfLanes 1
+  rightBarrier TRUE
+  leftBarrier TRUE
+  length 70
+  roadBoundingObject TRUE
+  rightBorderBoundingObject TRUE
+  leftBorderBoundingObject TRUE
+}
