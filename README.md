@@ -64,11 +64,11 @@ This project is a **2-player racing simulation** in Webots, where two manually c
 
 ## **Difficulties Faced & Lessons Learned**
 
-### Controller File Confusion: Python vs C
+### Controller File complocation: Python vs C
 
-- **Problem:** Initial controller attempts used `.py` files with C code, causing Python to throw `SyntaxError` due to C syntax.
-- **Solution:** Strict separation—use `.c` files for C code, ensure no `.py` files with C remain, and align all file extensions/language settings.
-
+- **Problem:** Initial controller attempts used `.py` files , causing slow compilation and crashing.
+- **Solution:** Use `.c` files for C code.
+  
 ### Controller Not Found / Not Compiled
 
 - **Problem:** Errors like "Could not find controller file: Expected wasd.exe..." meant Webots didn’t find compiled executables.
@@ -111,6 +111,7 @@ then rebuilt the controllers.
 - This project demonstrates a functional simulation and careful step-by-step engineering, even through major pivots.
 - The design allows future students to add more automation, players, or advanced race rules with minimal refactor.
 - Documentation and troubleshooting logs are included for transparency and ongoing learning.
+- Might have to install extra libraries to work it.
 
 ---
 
